@@ -2,7 +2,7 @@
 
 ### Table of contents 
 1. [Installation](#installation)
-2. [Project Motivation](#explanation)
+2. [Project Explanation](#explanation)
 3. [File Description](#files)
 4. [Licensing, Authors, and Acknowledgements](#licensing)
 
