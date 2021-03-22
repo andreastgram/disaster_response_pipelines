@@ -46,6 +46,10 @@ def clean_data(df):
     for column in categories:
         categories[column] = categories[column].astype(str).str[-1]
         categories[column] = categories[column].astype(int)
+    
+    # drop rows from the related column that has value 2, because we want binary rather than multiclass
+    indexNames = categories[categories.related == 2].index
+    categories.drop(indexNames , inplace=True)
 
     # drop the original categories column from `df`
     df = df.drop(['categories'], axis=1)
